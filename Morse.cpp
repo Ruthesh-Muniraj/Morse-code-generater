@@ -21,4 +21,4 @@ int main(){
         int m = alfabet.find(x,0);
         cout<<Morse[m]<<" "; // Exception on passing space between text
     }
-}/
+}
