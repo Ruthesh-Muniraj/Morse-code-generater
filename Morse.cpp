@@ -16,7 +16,7 @@ int main(){
     getline(cin,text);
     transform(text.begin(),text.end(),text.begin(),::tolower);
     
-    for(const string& x : text){
+    for(const char& x : text){
         
         int m = alfabet.find(x,0);
         cout<<Morse[m]<<" "; // Exception on passing space between text
