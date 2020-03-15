@@ -6,7 +6,7 @@ using namespace std;
 int main(){
     
     string text;
-    string alfabet="abcdefghijklmnopqrstuvwxyz";
+    string alphabet="abcdefghijklmnopqrstuvwxyz ";
     string Morse[]= {"*_**","**_*_*_*","*_*__*","**_*_*","*","*_**_*","**_**_*",
                     "*_*_*_*","*_*","**_*_**_*","**_*_**","****","**_**","**_*",
                     "*__*","*_*_*_*_*","*_*_**_*","*__*_*","*_*_*","**","*_*_**",
@@ -16,9 +16,13 @@ int main(){
     getline(cin,text);
     transform(text.begin(),text.end(),text.begin(),::tolower);
     
+    // if ( alphabet.find(' ',0) == -1) {
+
+    // }
+
     for(const char& x : text){
         
-        int m = alfabet.find(x,0);
+        int m = alphabet.find(x,0);
         cout<<Morse[m]<<" "; // Exception on passing space between text
     }
 }
