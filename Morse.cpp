@@ -19,7 +19,7 @@ int main(){
     cout<<">In morse an character can represented by \n>  ~Dot(.) and Dash(-) \n>  ~(/) Represent space between words   >_\n";
     cout<<"+-----------------------------------------+\n\n";
     
-    cout<<"Enter the text to conver in to string :";
+    cout<<"Enter the text to conver in to string : ";
     getline(cin,text);
     transform(text.begin(),text.end(),text.begin(),::tolower);
  
