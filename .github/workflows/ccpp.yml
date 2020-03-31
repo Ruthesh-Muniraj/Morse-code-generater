@@ -12,7 +12,7 @@ jobs:
           # Target architecture
           arch: x64
           # Windows SDK number to build for
-          sdk: 10.0.0.0
+          #sdk: 10.0.0.0
           # Enable Specre mitigations
           #spectre: # optional
           # VC++ compiler toolset version
