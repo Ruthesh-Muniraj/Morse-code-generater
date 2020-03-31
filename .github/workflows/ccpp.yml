@@ -1,16 +1,22 @@
 name: C/C++ CI
-
 on:
   push:
     branches: [ master ]
-  pull_request:
-    branches: [ master ]
-
 jobs:
   build:
-
-    runs-on: ubuntu-latest
-    
+    runs-on: windows-latest
     steps:
-     - name: Build c++ project
-       uses: nicledomaS/cmake_build_action@v1
+      - name: Enable Developer Command Prompt
+        uses: ilammy/msvc-dev-cmd@v1.1.0
+        with:
+          # Target architecture
+          arch: x64
+          # Windows SDK number to build for
+          sdk: 10.0.0.0
+          # Enable Specre mitigations
+          #spectre: # optional
+          # VC++ compiler toolset version
+          toolset: 17.0
+          # Build for Universal Windows Platform
+          #uwp: # optional
+
