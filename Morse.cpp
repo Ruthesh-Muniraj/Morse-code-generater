@@ -13,8 +13,10 @@ int main(){
                     "...-",".--","-..-","-.--","--..",".----",
                     "..---","...--","....-",".....","-....",
                     "--...","---..","----.","-----",".-.-.-",
-                    "--..--","..--..","-..-.",".--.-."," / "};
-
+                    "--..--","..--..","-..-.",".--.-."," / "}
+    
+    cout<<"-----------------------------------------";
+    cout<<"In morse an character can represented by \n  Dot(.) and Dash(-) \n  (/)represent space between words";
     cout<<"Enter the text to conver in to string :";
     getline(cin,text);
     transform(text.begin(),text.end(),text.begin(),::tolower);
