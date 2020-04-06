@@ -43,3 +43,6 @@ int main(){
     }
     
 }
+/*int found = alphabet.find(x,0);
+if(found) std::cout<<Morse[found]<<"   ";
+*/
