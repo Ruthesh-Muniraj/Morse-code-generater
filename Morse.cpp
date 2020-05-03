@@ -32,7 +32,6 @@ int main(){
     
     for(const char& input : textInputs){
         
-        
         int indexValue = 0;
         indexValue = alphabet.find(input,0);
         
