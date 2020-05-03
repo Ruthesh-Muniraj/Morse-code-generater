@@ -1,6 +1,9 @@
 #include <iostream>
 #include <string> 
 #include <algorithm>
+
+//author : Ruthesh Muniraj 
+
 void intro(){
     
     std::cout<<"+-----------------------------------------+\n";
