@@ -30,7 +30,7 @@ int main(){
     
     intro();
     
-    std::cout<< "Enter the textInputs to conver in to Morse code: ";
+    std::cout<< "Enter the textInputs to convert in to Morse code: ";
         getline( std::cin,textInputs );
         transform( textInputs.begin(),textInputs.end(),textInputs.begin(),::tolower ); //Convert Characters to lower case
     
